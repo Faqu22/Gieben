@@ -10,7 +10,6 @@ import Product0 from '../assets/animals/animales1.png'
 import Product1 from '../assets/figures/figuras1.png'
 import Product2 from '../assets/people/personas1.png'
 import Product3 from '../assets/product/Imagen14.png'
-
 function Home() {
     const images = [Help, Mision, Origen]
     const cards = [
@@ -32,7 +31,7 @@ function Home() {
                     <Slider images={images} />
                 </div>
                 <div>
-                    <div className="border-y-black border-y-2 py-5 text-53433e border-opacity-10 bg-white">
+                    <div className="border-y-black border-y-2 py-5 header text-53433e border-opacity-10 bg-white">
                         <h1>Catalogo</h1>
                     </div>
                     <div className="flex justify-center items-center">

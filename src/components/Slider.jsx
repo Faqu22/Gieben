@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { GrCaretNext, GrCaretPrevious } from 'react-icons/gr'
 
 function Slider({ images }) {
     const [current, setCurrent] = useState(0)
@@ -24,16 +25,16 @@ function Slider({ images }) {
                 </div>
             ))}
             <button
-                className="absolute top-1/2 left-12 transform -translate-y-20 bg-gray-700 bg-opacity-70 p-2 rounded-full"
+                className="absolute top-1/2 left-12 pr-4 transform -translate-y-20 bg-gray-300 bg-opacity-30 p-2 rounded-bl-full rounded-tl-full"
                 onClick={prevSlide}
             >
-                Prev
+                <GrCaretPrevious />
             </button>
             <button
-                className="absolute top-1/2 right-12 transform -translate-y-20 bg-gray-700 bg-opacity-70 p-2 rounded-full"
+                className="absolute top-1/2 pl-4 right-12 transform -translate-y-20 bg-gray-300 bg-opacity-30 p-2 rounded-br-full rounded-tr-full "
                 onClick={nextSlide}
             >
-                Next
+                <GrCaretNext />
             </button>
         </div>
     )
