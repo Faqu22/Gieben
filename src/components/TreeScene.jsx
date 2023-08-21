@@ -47,12 +47,39 @@ function TreeScene() {
         // Materials and their color change listeners
         // ... (Similar to what you provided, for each material)
 
-        // Load models
+        //load model(Buho)
+        const dracoLoader = new DRACOLoader()
+        dracoLoader.setDecoderPath('./ThreeJS/draco/')
+        dracoLoader.setDecoderConfig({ type: 'js' }) // (Optional) Override detection of WASM support.
+
         const loader = new GLTFLoader()
-        loader.setDRACOLoader(DRACOLoader)
+        loader.setDRACOLoader(dracoLoader)
 
-        // ... (Your code for loading the Buho model)
+        loader.load('./3D Models/Buho.glb', function (gltf) {
+            const Buho = gltf.scene.children[0]
 
+            Buho.getObjectByName('Izquierda').material = IzquierdaMaterial
+            Buho.getObjectByName('Derecha').material = DerechaMaterial
+            Buho.getObjectByName('Tronco').material = TroncoMaterial
+            Buho.getObjectByName('ojosstl').material = OjosMaterial
+            Buho.getObjectByName('Pies').material = PiesMaterial
+            Buho.getObjectByName('Espalda').material = EspaldaMaterial
+            Buho.getObjectByName('Pecho').material = PechoMaterial
+            Buho.getObjectByName('pupilastl').material = PupilasMaterial
+
+            Buho.scale.set(0.5, 0.5, 0.5)
+            Buho.position.set(1.9, 3.7, 1)
+
+            scene.add(Buho)
+
+            //animate
+            function animate() {
+                requestAnimationFrame(animate)
+                Buho.rotation.y += 0.02
+                renderer.render(scene, camera)
+            }
+            animate()
+        })
         const manoMaterial = new THREE.MeshStandardMaterial({
             color: 0xffffff,
             metalness: 0.5,
@@ -64,7 +91,7 @@ function TreeScene() {
             manoMaterial.color.set(this.value)
         })
 
-        loader.load('../assets/modelsTree/.glb', function (gltf) {
+        loader.load('../assets/modelsTree/hand.glb', function (gltf) {
             const uruguay = gltf.scene.children[0]
             uruguay.getObjectByName('mano').material = manoMaterial
             uruguay.scale.set(5.5, 5.5, 5.5)
