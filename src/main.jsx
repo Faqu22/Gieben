@@ -4,8 +4,8 @@ import './index.css'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import Shop from './pages/Shop'
-// import About from './pages/About.jsx'
-// import Resume from './pages/Resume'
+import Us from './pages/Us'
+import Contact from './pages/Contact'
 
 const router = createHashRouter([
     {
@@ -13,17 +13,17 @@ const router = createHashRouter([
         element: <Home />,
     },
     {
-        path: '/tienda',
+        path: '/shop',
         element: <Shop />,
     },
-    // {
-    //     path: '/projects',
-    //     element: <Projects />,
-    // },
-    // {
-    //     path: '/resume',
-    //     element: <Resume />,
-    // },
+    {
+        path: '/us',
+        element: <Us />,
+    },
+    {
+        path: '/contact',
+        element: <Contact />,
+    },
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
