@@ -1,6 +1,6 @@
 import React from 'react'
 import { AiOutlineMail, AiFillPhone } from 'react-icons/ai'
-import Logo from '../assets/LogoOp.png'
+import Logo from '../assets/brand/LogoOp.png'
 
 function Footer() {
     return (
