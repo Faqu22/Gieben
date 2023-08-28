@@ -1,18 +1,18 @@
 import React from 'react'
 import Layout from '../layout'
 import Card from '../components/Card'
-import pr1 from '../assets/product/Imagen1.png'
-import pr2 from '../assets/product/Imagen2.png'
-import pr3 from '../assets/product/Imagen3.png'
-import pr4 from '../assets/product/Imagen4.png'
-import pr5 from '../assets/product/Imagen5.png'
-import pr6 from '../assets/product/Imagen6.png'
-import pr7 from '../assets/product/Imagen7.png'
-import pr8 from '../assets/product/Imagen9.png'
-import pr9 from '../assets/product/Imagen11.png'
-import pr10 from '../assets/product/Imagen13.png'
-import pr11 from '../assets/product/Imagen14.png'
-import pr12 from '../assets/product/Imagen15.png'
+import pr1 from '../assets/shop/animals/buho1.jpeg'
+import pr2 from '../assets/shop/animals/buho2.jpeg'
+import pr3 from '../assets/shop/animals/cat1.jpeg'
+import pr4 from '../assets/shop/animals/cat2.jpeg'
+import pr5 from '../assets/shop/animals/elefant1.jpeg'
+import pr6 from '../assets/shop/animals/elefant2.jpeg'
+import pr7 from '../assets/shop/animals/horse1.jpeg'
+import pr8 from '../assets/shop/animals/tiger1.jpeg'
+import pr9 from '../assets/shop/people/dancer.jpeg'
+import pr10 from '../assets/shop/people/farmer1.jpeg'
+import pr11 from '../assets/shop/figures/warrior1.jpeg'
+import pr12 from '../assets/shop/product/jar1.jpeg'
 
 function Shop() {
     const images = [
@@ -32,7 +32,7 @@ function Shop() {
 
     return (
         <Layout>
-            <div className="bg-beige">
+            <div className="bg-e8e8e8">
                 <div className="flex flex-col">
                     <h1 className="header mb-96 border-y-black border-y-2 py-5 text-53433e border-opacity-10 bg-white">
                         Ejemplares (Proximamente...)
