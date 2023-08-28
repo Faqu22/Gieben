@@ -7,16 +7,23 @@ export default {
             primary: '#3490dc',
             secondary: '#ffed4a',
             danger: '#e3342f',
-            beige: '#bba485',
+            beige: '#fefdf9',
             bba485: '#bba485',
+            e8e8e8: '#e8e8e8',
             a8957a: '#A98C62',
             myblue: '',
         }),
         textColor: {
             '53433e': '#53433e',
+            black: '#000000',
+            second: '#222222',
+            third: '#fefdf9',
         },
         fontFamily: {
             petit: ['PetitFormalScript', 'sans-serif'], // sans-serif es una fuente de respaldo en caso de que PetitFormalScript no se cargue.
+            oswald: ['Oswald', 'sans-serif'],
+            openSans: ['Open Sans'],
+            adla: ['Adla'],
         },
         backdropBlur: {
             none: 'blur(0)',
