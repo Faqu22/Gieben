@@ -16,7 +16,7 @@ function Slider({ images }) {
         <div className="relative overflow-hidden h-screen w-auto">
             {images.map((img, index) => (
                 <div
-                    className={`absolute w-full flex justify-center h-5/6 transition-opacity duration-300 ${
+                    className={`absolute w-full flex justify-center h-3/4 transition-opacity duration-300 ${
                         index === current ? 'opacity-100' : 'opacity-0'
                     }`}
                     key={index}
