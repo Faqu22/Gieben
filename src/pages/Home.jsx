@@ -13,14 +13,14 @@ import Product7 from '../assets/home/catalog8.png'
 
 function Home() {
     const cards = [
-        { image: Product0, label: 'Animales', path: '/tienda' },
-        { image: Product1, label: 'Figura', path: '/tienda' },
-        { image: Product2, label: 'Personas', path: '/tienda' },
-        { image: Product3, label: 'aaa', path: '/tienda' },
-        { image: Product4, label: 'pedro', path: '/tienda' },
-        { image: Product5, label: 'Manzana', path: '/tienda' },
-        { image: Product6, label: 'mma', path: '/tienda' },
-        { image: Product7, label: 'Mandarina', path: '/tienda' },
+        { image: Product0, label: 'Animales' },
+        { image: Product1, label: 'Figura' },
+        { image: Product2, label: 'Personas' },
+        { image: Product3, label: 'aaa' },
+        { image: Product4, label: 'pedro' },
+        { image: Product5, label: 'Manzana' },
+        { image: Product6, label: 'mma' },
+        { image: Product7, label: 'Mandarina' },
     ]
     return (
         <Layout>

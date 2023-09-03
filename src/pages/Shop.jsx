@@ -13,7 +13,9 @@ import pr9 from '../assets/shop/people/dancer.jpeg'
 import pr10 from '../assets/shop/people/farmer1.jpeg'
 import pr11 from '../assets/shop/figures/warrior1.jpeg'
 import pr12 from '../assets/shop/product/jar1.jpeg'
-
+import { Hand, PickerH } from '../components/threeJS/model/Hand'
+import { Owl, PickerO } from '../components/threeJS/model/Buho'
+import SliderThree from '../components/SliderThree'
 function Shop() {
     const images = [
         { image: pr1, label: 'Rey Baltazar $100' },
@@ -29,14 +31,29 @@ function Shop() {
         { image: pr11, label: 'Cerradura $200' },
         { image: pr12, label: 'Elefante $250' },
     ]
+    const models = [
+        {
+            model: Hand,
+            label: 'Mano',
+            rot: [Math.PI / -2, 0, Math.PI / -2.5],
+            picker: PickerH,
+        },
+        {
+            model: Owl,
+            label: 'Buho',
+            rot: [0, 0, 0],
+            picker: PickerO,
+        },
+    ]
 
     return (
         <Layout>
             <div className="bg-e8e8e8">
                 <div className="flex flex-col">
-                    <h1 className="header mb-96 border-y-black border-y-2 py-5 text-53433e border-opacity-10 bg-white">
+                    <h1 className="header border-y-black border-y-2 py-5 text-53433e border-opacity-10 bg-white">
                         Ejemplares (Proximamente...)
                     </h1>
+                    <SliderThree items={models} />
                 </div>
                 <div className="flex flex-col">
                     <h1 className="header mb-3 border-y-black border-y-2 py-5 text-53433e border-opacity-10 bg-white">
