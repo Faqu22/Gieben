@@ -5,4 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
     plugins: [react()],
     base: 'https://faqu22.github.io/Gieben/',
+    assetsInclude: '**/*.glb',
 })

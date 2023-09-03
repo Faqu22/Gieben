@@ -7,6 +7,7 @@ import React, { useRef, useEffect, useState } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { proxy, useSnapshot } from 'valtio'
 import { HexColorPicker } from 'react-colorful'
+import owl from '../../../../public/buho.glb'
 import '../styles.css'
 
 const state = proxy({
@@ -27,7 +28,7 @@ const state = proxy({
 export function Owl(props) {
     const ref = useRef()
     const snap = useSnapshot(state)
-    const { nodes, materials } = useGLTF('../../../../public/buho.glb')
+    const { nodes, materials } = useGLTF(owl)
     const [hovered, set] = useState(null)
 
     return (
@@ -107,7 +108,7 @@ export function Owl(props) {
     )
 }
 
-useGLTF.preload('../../../../public/buho.glb')
+useGLTF.preload(owl)
 
 export function PickerO() {
     const snap = useSnapshot(state)
