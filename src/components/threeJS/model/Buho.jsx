@@ -27,7 +27,7 @@ const state = proxy({
 export function Owl(props) {
     const ref = useRef()
     const snap = useSnapshot(state)
-    const { nodes, materials } = useGLTF('/buho.glb')
+    const { nodes, materials } = useGLTF('/public/buho.glb')
     const [hovered, set] = useState(null)
 
     return (
@@ -107,7 +107,7 @@ export function Owl(props) {
     )
 }
 
-useGLTF.preload('/buho.glb')
+useGLTF.preload('/public/buho.glb')
 
 export function PickerO() {
     const snap = useSnapshot(state)

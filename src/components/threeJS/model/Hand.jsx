@@ -19,7 +19,7 @@ const state = proxy({
 export function Hand(props) {
     const ref = useRef()
     const snap = useSnapshot(state)
-    const { nodes, materials } = useGLTF('/hand.glb')
+    const { nodes, materials } = useGLTF('/public/hand.glb')
     const [hovered, set] = useState(null)
 
     useEffect(() => {
@@ -68,7 +68,7 @@ export function Hand(props) {
     )
 }
 
-useGLTF.preload('/hand.glb')
+useGLTF.preload('/public/hand.glb')
 
 export function PickerH() {
     const snap = useSnapshot(state)
