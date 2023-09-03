@@ -4,6 +4,7 @@ import SlideCat from './SlideCat'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import { Link } from 'react-router-dom'
+import '../button.css'
 
 function SliderCat({ items }) {
     const settings = {
