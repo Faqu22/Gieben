@@ -2,10 +2,10 @@ import React from 'react'
 import Badge from './Badge'
 import { Link } from 'react-router-dom'
 
-function Card({ image, label, path }) {
+function Card({ image, label }) {
     return (
         <Link
-            to={path}
+            to="/tienda"
             className="w-56 h-96 m-8  rounded-lg transform hover:scale-105 transition-transform"
         >
             {/* Contenedor de imagen */}
