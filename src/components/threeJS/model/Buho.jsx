@@ -41,6 +41,7 @@ export function Owl(props) {
                 state.current = e.object.material.name
             }}
             {...props}
+            scale={0.6}
         >
             <mesh
                 geometry={nodes.pupilastl.geometry}
